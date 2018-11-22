@@ -69,8 +69,8 @@ ins {
 input[type=button] {
     font-family: 'Reenie Beanie', cursive;
     font-weight: bold;
-    border-radius: 3px;
-    padding: 5px;
+    border-radius: 5px;
+    padding: 5px 15px;
     font-size: 25px;
 }
 
@@ -86,7 +86,7 @@ input[type=button] {
 #editToggleButton {
     background-color: #fae25a;
     border: 2px dashed #95BF00;
-    margin-right: 10px;
+    margin-right: 50px;
 }
 
 #resetButton:hover {
