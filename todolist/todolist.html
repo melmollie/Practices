@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>A To-Do List Created in HTML5</title>
+    <meta content="to-do list, html5, example" name="keywords">
+    <meta content="A simple example that uses many HTML5 features such as local storage, CSS3 selectors, web fonts, and more." name="description">
+    <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do List</title>
+</head>
+<body>
+    <div id="contentMain">
+        <i class="pin"></i>
+        <h1>My To-Do List</h1>
+        <h2>Things I <del>have to</del><ins>will</ins> do.</h2>
+        <ol id="myList" contenteditable="false">
+            <li>Do something!</li>
+        </ol>
+        <div id="centerButtons">
+            <input id="editToggleButton" type="button" value="Edit" />
+            <input id="resetButton" type="button" value="Reset" />
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
