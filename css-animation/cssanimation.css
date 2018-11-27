@@ -1,0 +1,117 @@
+#mainContent {
+    background-color: #A2BFCE;
+    border-radius: 4px; 
+    padding: 10px; 
+    width: 600px;
+    height: 300px; 
+    overflow: hidden;
+}
+
+.cloud {
+    position: absolute;
+}
+
+#bigcloud {
+    animation: bobble 2s infinite;
+    margin-left: 160px; 
+    margin-top: -250px;
+}
+
+#eye1 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    animation: bobble 2.05s infinite;
+    position: absolute;
+    margin-top: -170px;
+    margin-left: 300px;
+}
+
+#eye2 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    animation: bobble 2.05s infinite;
+    position: absolute;
+    margin-top: -170px;
+    margin-left: 350px;
+}
+
+#mouth {
+    width: 50px;
+    height: 20px;
+    border: solid 2px #000;
+    border-color: transparent transparent #000 transparent;
+    border-radius: 50%/10px 10px 10px 10px;
+    animation: bobble 2.05s infinite, smile 5s infinite;
+    position: absolute;
+    margin-top: -170px;
+    margin-left: 303px;
+}
+
+#smallcloud {
+    animation: slide 10s infinite;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.smallcloud {
+    margin-top: 50px;
+}
+
+#smallcloud2 {
+    animation: slide 13s infinite;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+
+}
+
+@keyframes bobble {
+    0% {
+        transform: translateY(40px);
+        animation-timing-function: ease-in;
+    }
+    50% {
+        transform: translateY(50px);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform: translateY(40px);
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translate3d(600px, 0px, 0px);
+        animation-timing-function: ease-in;
+    }
+    100% {
+        transform: translate3d(-400px, 0px, 0px);
+
+    }
+}
+
+@keyframes smile {
+    0% {
+        animation-timing-function: ease-in;
+        border-radius: 50%/0px 0px 5px 5px;
+    }
+    40% {
+        border-radius: 50%/0px 0px 20px 20px;
+        animation-timing-function: ease-in-out;
+    }
+    60% {
+        border-radius: 50%/0px 0px 20px 20px;
+        animation-timing-function: ease-in-out;
+    }
+    100% {
+        border-radius: 50%/0px 0px 5px 5px;
+        animation-timing-function: ease-in-out;
+    }
+}
+
+#bigcloud:hover {
+    animation-play-state: paused;
+}
