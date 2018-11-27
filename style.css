@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url('https://fonts.googleapis.com/css?family=Kavivanar');
+
+body {
+    background-color: #e0dbdb;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+    color: #993902;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited {
+    color: #32335c;
+}
+
+a:hover {
+    color: #05fff2;
+}
+
+nav a:hover {
+    background-color: #993902;
+    color: #f7ddcd;
+    font-weight: 500;
+}
+
+
+nav .active {
+    background-color: #5bc2a8;
+    font-weight: 500;
+    color: #f7ddcd;
+}
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+    color: #ec2727;
+    font-weight: 700px;
+    font-size: 40px;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Kavivanar', cursive;
+    font-size: 15px;
+    margin: 0;
+}
+
+span {
+    font-family: 'Kavivanar', cursive;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-rows: auto auto; 
+    grid-template-areas: 
+        "nav"
+        "content"
+        "footer";
+    width: 70%;
+    margin: 10px auto; 
+}
+
+nav {
+    grid-area: "nav";
+    background-color: #ebb915;
+    border-radius: 10px 10px 0 0;
+    font-family: 'Amatic SC', cursive;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.content {
+    grid-area: "content";
+    background-color: #5bc2a8;
+    padding: 40px 60px 0px 60px;
+}
+
+footer {
+    grid-area: "content";
+    background-color: #5bc2a8;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    border-radius: 0 0 10px 10px;
+    color: #f7ddcd;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #c5bdb8;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0;
+    padding: 15.5px;
+}
+
+nav li > a {
+    padding: 16px 30px;
+}
+
+.content ul {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 5px 0;
+}

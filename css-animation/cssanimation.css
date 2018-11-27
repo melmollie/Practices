@@ -22,7 +22,7 @@
     height: 10px;
     border-radius: 50%;
     background-color: black;
-    animation: bobble 2.05s infinite;
+    animation: bobble 2.02s infinite;
     position: absolute;
     margin-top: -170px;
     margin-left: 300px;
@@ -33,7 +33,7 @@
     height: 10px;
     border-radius: 50%;
     background-color: black;
-    animation: bobble 2.05s infinite;
+    animation: bobble 2.02s infinite;
     position: absolute;
     margin-top: -170px;
     margin-left: 350px;
@@ -45,7 +45,7 @@
     border: solid 2px #000;
     border-color: transparent transparent #000 transparent;
     border-radius: 50%/10px 10px 10px 10px;
-    animation: bobble 2.05s infinite, smile 5s infinite;
+    animation: bobble 2.02s infinite, smile 5s infinite;
     position: absolute;
     margin-top: -170px;
     margin-left: 303px;
