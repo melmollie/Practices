@@ -24,12 +24,12 @@ a:hover {
     color: #05fff2;
 }
 
+
 nav a:hover {
     background-color: #993902;
     color: #f7ddcd;
     font-weight: 500;
 }
-
 
 nav .active {
     background-color: #5bc2a8;
@@ -49,6 +49,14 @@ h3 {
     font-family: 'Kavivanar', cursive;
     font-size: 15px;
     margin: 0;
+}
+
+h2 {
+    font-family: 'Kavivanar', cursive;
+    font-size: 20px;
+    font-weight: 700px;
+    color: #ec2727;
+
 }
 
 span {
