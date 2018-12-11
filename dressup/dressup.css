@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+body {
+    background-color: #cc9ad6; 
+    font-family: 'Raleway', sans-serif;
+}
+
+img {
+    position: absolute; 
+    display: inline-block;
+    height: 100%; 
+}
+
+button {
+    margin-top: 20%; 
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+
+li {
+    list-style-type: none; 
+    display: inline-block; 
+}
+
+#character {
+    z-index: -100; 
+}
+
+.shirt {
+    visibility: hidden; 
+    z-index: 2; 
+}
+
+.pant {
+    visibility: hidden; 
+    z-index: 1;
+}
