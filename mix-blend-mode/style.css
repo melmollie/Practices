@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.background {
+    background-image: url(primoz-kerin-1087122-unsplash.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    overflow: hidden;
+    animation: changebg 15s linear infinite;
+}
+
+@keyframes changebg {
+    0% { background-image: url(primoz-kerin-1087122-unsplash.jpg);}
+    10% { background-image: url(primoz-kerin-1087122-unsplash.jpg);}
+    20% { background-image: url(gabriel-santiago-1596-unsplash.jpg); }
+    30% { background-image: url(gabriel-santiago-1596-unsplash.jpg); }
+    40% { background-image: url(khachik-simonian-269941-unsplash.jpg); }
+    50% { background-image: url(khachik-simonian-269941-unsplash.jpg); }
+    60% { background-image: url(justin-bisson-beck-192842-unsplash.jpg); }
+    70% { background-image: url(justin-bisson-beck-192842-unsplash.jpg); }
+    80% { background-image: url(darius-soodmand-116253-unsplash.jpg); }
+    90% { background-image: url(darius-soodmand-116253-unsplash.jpg); }
+    100% { background-image: url(primoz-kerin-1087122-unsplash.jpg); }
+}
+
+.blend {
+    position: relative;
+    margin: 34% 34%;
+    color: white;
+    font-size: 4em;
+    font-family: 'Montserrat', sans-serif;
+    border: 10px solid #ffffff;
+    border-bottom: 30px  solid #ffffff;
+    border-top: 30px  solid #ffffff;
+    width: 420px;
+    text-align: center;
+    padding: 5px;
+    mix-blend-mode: soft-light;
+    animation: blendmode 15s linear infinite;
+}
+
+@keyframes blendmode {
+    0% { mix-blend-mode: color-dodge; 
+        color: #ecff98;
+        border-color: #ecff98;}
+    10% { mix-blend-mode: color-dodge;
+        color: #ecff98;
+        border-color: #ecff98;}
+
+    20% { mix-blend-mode: hard-light;
+        color: #a5f7fd;
+        border-color: #a5f7fd;}
+    30% { mix-blend-mode: hard-light;
+        color: #a5f7fd;
+        border-color: #a5f7fd;}
+
+    40% { mix-blend-mode: difference;
+        color: #00f800;
+        border-color: #00f800;}
+    50% { mix-blend-mode: difference;
+        color: #00f800;
+        border-color: #00f800;}
+
+
+    60% { mix-blend-mode: exclusion;
+        color: #8109d1;
+        border-color: #8109d1;}
+    70% { mix-blend-mode: exclusion;
+        color: #8109d1;
+        border-color: #8109d1;}
+
+    80% { mix-blend-mode: overlay;
+        color: #FFFFFF;
+        border-color: #FFFFFF;}
+    90% { mix-blend-mode: overlay;
+        color: #FFFFFF;
+        border-color: #FFFFFF;}
+    
+    100% { mix-blend-mode: color-dodge;
+        color: #ecff98;
+        border-color: #ecff98;}
+}
