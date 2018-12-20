@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
 @import url('https://fonts.googleapis.com/css?family=Kavivanar');
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #e0dbdb;
 }
@@ -140,4 +144,73 @@ nav li > a {
 .content ul {
     font-family: 'Courier New', Courier, monospace;
     margin: 5px 0;
+}
+
+.picture {
+    position: relative;
+    top: 5px;
+    width: 200px; 
+    height: 200px;
+}
+
+#profilepic {
+    border: 2px solid #e0dbdb;
+    box-shadow: 0px 3px 5px #000;
+}
+
+#speechbubble {
+    position: absolute;
+    transform-origin: 0% 100%;
+    text-align: center; 
+    background-color: #FFF;
+    color: #2656af;
+    font-family: 'Kavivanar', cursive;
+    font-weight: 600;
+    border-radius: 10px; 
+    width: 120px; 
+    padding: 10px;
+    left: -20px;
+    top: -10px; 
+    animation-fill-mode: forwards;
+    transform: scale(0); 
+}
+
+#speechbubble::before {
+    content: ""; 
+    display: block; 
+    width: 0; 
+    position: absolute; 
+    bottom: -15px;
+    left: 55px;
+    border-style: solid; 
+    border-width: 10px; 
+    border-color: #FFF transparent transparent #FFF;
+    transform: rotate(100deg);
+}
+
+.picture:hover #speechbubble {
+    animation: expand-bounce 0.5s linear; 
+    animation-fill-mode: forwards;
+} 
+
+@keyframes expand-bounce {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.25);
+    }
+    100% {
+        transform: scale(1);
+        transform: rotate(-5deg);
+    }
+}
+
+@keyframes shrink {
+    0% { 
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
 }

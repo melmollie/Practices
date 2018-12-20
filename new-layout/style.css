@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*  Menu */
+.menu-content {
+    max-height: 0;
+    overflow: hidden;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    padding: 0 0 0 50px;
+}
+
+.collapsible-menu {
+    background-color: #FFF;
+    padding: 10px 20px;
+    border-bottom: 3px solid #CDE700; 
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2)
+}
+
+.collapsible-menu ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+.collapsible-menu a {
+    display: block; 
+    padding: 8px 55px; 
+    text-decoration: none;
+}
+
+.collapsible-menu label {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 35px; 
+    display: block; 
+    cursor: pointer; 
+    background: url(icons/iconfinder_menu-24_103174.png) no-repeat left center; 
+    background-size: 25px;
+    padding: 10px 0px 12px 50px; 
+}
+
+input#menu {
+    display: none;
+}
+
+input:checked ~ label {
+    background-image: url(icons/delete-sign.png);
+    background-size: 25px;
+}
+
+input:checked ~ .menu-content {
+    max-height: 100%;
+}
+
+
+/* Index-Slideshow */
+
+#indexSlideshow {
+    background-image: url(../pictures/brianna-fairhurst-2888-unsplash.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw; 
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: -99;
+}
+
+#hello {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 40px; 
+    font-weight: 600;
+    height: 130px; 
+    width: 200px;
+    padding: 10px;
+    position: absolute;
+    left: 40%;
+    top: 45%;
+    text-align: center; 
+    color: #FFF;
+    border-top: 10px solid #FFF;
+    border-bottom: 15px solid #FFF;
+    mix-blend-mode: normal;
+
+}
+
+#changeText {
+    text-shadow: 2px 3px 5px #000;
+}
+
+
+/* Footer */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    border-top: 3px solid #CDE700; 
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.85em;
+    font-weight: 600;
+    background-color: #FFF;
+
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer li {
+    display: inline-block;
+    padding: 12px 60px;
+}
