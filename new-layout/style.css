@@ -74,16 +74,20 @@ input:checked ~ .menu-content {
     font-family: 'Major Mono Display', monospace;
     font-size: 40px; 
     font-weight: 600;
-    height: 130px; 
-    width: 200px;
+    max-height: 130px; 
+    width: 24%;
+    min-width: 230px;
     padding: 10px;
     position: absolute;
-    left: 40%;
+    left: 38%;
     top: 45%;
     text-align: center; 
     color: #FFF;
-    border-top: 10px solid #FFF;
+    border-top: 5px solid #FFF;
     border-bottom: 15px solid #FFF;
+    border-left: 2px solid #FFF;
+    border-right: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.3);
     mix-blend-mode: normal;
 
 }
